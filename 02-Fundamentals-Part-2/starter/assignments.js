@@ -12,17 +12,33 @@ function percentageOfWorld1(population) {
   return (population / 7900) * 100;
 }
 
-const perUS = percentageOfWorld1(360);
-const perCanada = percentageOfWorld1(39);
-const perMexico = percentageOfWorld1(128);
-console.log(`The US population percentage is ${perUS}.
-The Canadian population percentage is ${perCanada}.
-The Mexican population percentage is ${perMexico}.`);
+// const perUS = percentageOfWorld1(360);
+// const perCanada = percentageOfWorld1(39);
+// const perMexico = percentageOfWorld1(128);
+// console.log(`The US population percentage is ${perUS}.
+// The Canadian population percentage is ${perCanada}.
+// The Mexican population percentage is ${perMexico}.`);
 
-const percentageOfWolrd2 = function (population) {
-  return (population / 7900) * 100;
-};
-const perUS2 = percentageOfWolrd2(360);
-const perCanada2 = percentageOfWolrd2(39);
-const perMexico2 = percentageOfWolrd2(128);
-console.log(perUS2, perCanada2, perMexico2);
+// const percentageOfWolrd2 = function (population) {
+//   return (population / 7900) * 100;
+// };
+// const perUS2 = percentageOfWolrd2(360);
+// const perCanada2 = percentageOfWolrd2(39);
+// const perMexico2 = percentageOfWolrd2(128);
+// console.log(perUS2, perCanada2, perMexico2);
+
+// const percentageOfWorld3 = (population) => (population / 7900) * 100;
+// const perUS3 = percentageOfWorld3(332);
+// const perCanada3 = percentageOfWorld3(39);
+// const perMexico3 = percentageOfWorld3(128);
+// console.log(perUS3, perCanada3, perMexico3);
+
+function describePopulation(country, population) {
+  const percentage = percentageOfWorld1(population);
+  const description = `${country} has ${population} million people, which is about ${percentage} of the world.`;
+  console.log(description);
+}
+
+describePopulation("Portugal", 10);
+describePopulation("China", 1441);
+describePopulation("USA", 332);
