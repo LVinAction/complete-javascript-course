@@ -33,55 +33,55 @@ function percentageOfWorld1(population) {
 // const perMexico3 = percentageOfWorld3(128);
 // console.log(perUS3, perCanada3, perMexico3);
 
-function describePopulation(country, population) {
-  const percentage = percentageOfWorld1(population);
-  const description = `${country} has ${population} million people, which is about ${percentage} of the world.`;
-  console.log(description);
-}
+// function describePopulation(country, population) {
+//   const percentage = percentageOfWorld1(population);
+//   const description = `${country} has ${population} million people, which is about ${percentage} of the world.`;
+//   console.log(description);
+// }
 
-describePopulation("Portugal", 10);
-describePopulation("China", 1441);
-describePopulation("USA", 332);
+// describePopulation("Portugal", 10);
+// describePopulation("China", 1441);
+// describePopulation("USA", 332);
 
-const populations = [10, 1441, 332, 83];
-console.log(populations.length === 4);
-const percentages = [
-  percentageOfWorld1(populations[0]),
-  percentageOfWorld1(populations[1]),
-  percentageOfWorld1(populations[2]),
-  percentageOfWorld1(populations[3]),
-];
-console.log(percentages);
+// const populations = [10, 1441, 332, 83];
+// console.log(populations.length === 4);
+// const percentages = [
+//   percentageOfWorld1(populations[0]),
+//   percentageOfWorld1(populations[1]),
+//   percentageOfWorld1(populations[2]),
+//   percentageOfWorld1(populations[3]),
+// ];
+// console.log(percentages);
 
-const neighbours = ["Canada", "Mexico", "Russia"];
-neighbours.push("Utopia");
-console.log(neighbours);
-neighbours.pop();
-console.log(neighbours);
+// const neighbours = ["Canada", "Mexico", "Russia"];
+// neighbours.push("Utopia");
+// console.log(neighbours);
+// neighbours.pop();
+// console.log(neighbours);
 
-if (!neighbours.includes("Germany")) {
-  console.log(`'Probably not a central european country :D'`);
-}
+// if (!neighbours.includes("Germany")) {
+//   console.log(`'Probably not a central european country :D'`);
+// }
 
-console.log(neighbours.indexOf("Mexico"));
-neighbours[1] = "Republic of Mexico";
-console.log(neighbours);
+// console.log(neighbours.indexOf("Mexico"));
+// neighbours[1] = "Republic of Mexico";
+// console.log(neighbours);
 
-const myCountry = {
-  country: "USA",
-  capital: "Washington DC",
-  language: "English",
-  population: 330,
-  neighbors: ["Canada", "Mexico", "Russia"],
-  describe: function () {
-    console.log(
-      `${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbors.length} neighbouring countries and a capital called ${this.capital}.`
-    );
-  },
-  checkIsland: function () {
-    this.isIsland = this.neighbors.length === 0 ? true : false;
-  },
-};
+// const myCountry = {
+//   country: "USA",
+//   capital: "Washington DC",
+//   language: "English",
+//   population: 330,
+//   neighbors: ["Canada", "Mexico", "Russia"],
+//   describe: function () {
+//     console.log(
+//       `${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbors.length} neighbouring countries and a capital called ${this.capital}.`
+//     );
+//   },
+//   checkIsland: function () {
+//     this.isIsland = this.neighbors.length === 0 ? true : false;
+//   },
+// };
 
 // console.log(
 //   `${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbors.length} neighbouring countries and a capital called ${myCountry.capital}.`
@@ -92,6 +92,34 @@ const myCountry = {
 // myCountry["population"] -= 2;
 // console.log(myCountry.population);
 
-myCountry.describe();
-myCountry.checkIsland();
-console.log(myCountry);
+// myCountry.describe();
+// myCountry.checkIsland();
+// console.log(myCountry);
+
+// for (let voter = 1; voter <= 50; voter++) {
+//   console.log(`Voter number ${voter} is currently voting.`);
+// }
+
+//
+
+// const populations = [10, 1441, 332, 83];
+// const percentages2 = [];
+
+// for (let i = 0; i < populations.length; i++) {
+//   const perc = percentageOfWorld1(populations[i]);
+//   percentages2.push(perc);
+// }
+
+//console.log(percentages2);
+
+const listofNeighbors = [
+  ["Canada", "Mexico"],
+  ["Spain"],
+  ["Norway", "Sweden", "Russia"],
+];
+
+for (let i = 0; i < listofNeighbors.length; i++) {
+  for (let i2 = 0; i2 < listofNeighbors[i].length; i2++) {
+    console.log(`Neighbour: ${listofNeighbors[i][i2]}`);
+  }
+}
