@@ -5,14 +5,14 @@
 }
 
 body {
-  background-color: rgb(255, 247, 201);
+  background-color: rgb(244, 240, 163);
   font-family: Arial;
   font-size: 20px;
   padding: 50px;
 }
 
 h1 {
-  font-size: 35px;
+  font-size: 45px;
   margin-bottom: 25px;
 }
 
@@ -26,12 +26,12 @@ p {
 }
 
 .first {
-  color: red;
+  color: rgb(50, 11, 82);
 }
 
 #your-name {
-  background-color: rgb(255, 220, 105);
-  border: 5px solid #444;
+  background-color: rgb(255, 105, 180);
+  border: 5px dashed #444;
   width: 400px;
   padding: 25px;
   margin-top: 30px;
@@ -48,9 +48,9 @@ a {
 }
 
 #course-image {
-  width: 300px;
+  width: 400px;
 }
 
 #your-name h2 {
-  color: olivedrab;
+  color: rgb(15, 77, 158);
 }
